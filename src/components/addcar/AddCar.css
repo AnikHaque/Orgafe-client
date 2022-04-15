@@ -1,0 +1,18 @@
+.add-menu form{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    }
+    .add-menu input {
+        width: 70%;
+        height: 45px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    .add-menu{
+        background-color: black;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }

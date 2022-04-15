@@ -1,0 +1,24 @@
+.specialwatchstore{
+  
+   background-image: url("https://wpbingosite.com/wordpress/wrish/wp-content/uploads/2021/08/bacg.jpg");
+
+   height: 90vh;
+   background-position: center;
+  
+  overflow: scroll;
+}
+.store-button{
+    text-decoration: none;
+}
+.watch-image{
+    padding-top: 120px;
+}
+.special-p{
+    padding-top: 200px;
+}
+.gift{
+    background-color: #b59a7e;
+    padding: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
