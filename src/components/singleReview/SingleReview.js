@@ -2,17 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ProductionQuantityLimits } from '@mui/icons-material';
 import ReactStars from "react-rating-stars-component";
-
 import './SingleReview.css';
-
-
 const SingleReview = ({ review }) => {
     // const {service} = props;
-    const { _id, name,description,price, img } = review;
-
-    
-    
-
+    const { _id, name,description,price, img } = review; 
     const firstExample = {
       size: 30,
       value:price,

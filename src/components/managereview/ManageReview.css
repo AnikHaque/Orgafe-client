@@ -8,3 +8,9 @@
     padding-bottom: 5rem;
    
 }
+.hhh{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+}
