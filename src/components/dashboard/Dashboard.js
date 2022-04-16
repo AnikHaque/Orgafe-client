@@ -24,7 +24,7 @@ import {
 import {  Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Button } from '@mui/material';
  import DashboardHome from '../dashboardhome/DashboardHome';
- import AddCar from '../addcar/AddCar';
+
  import Header from '../header/Header';
 // import MakeAdmin from '../MakeAdmin/MakeAdmin';
 // import AddDoctor from '../AddDoctor/AddDoctor';
@@ -40,6 +40,7 @@ import MyOrder from '../myorders/MyOrder';
 import Home from '../home/Home';
 import Review from '../review/Review';
 import MakeAdmin from '../makeadmin/MakeAdmin';
+import AddMenu from '../addmenu/AddMenu';
 const drawerWidth = 200;
 
 function Dashboard(props) {
@@ -60,7 +61,7 @@ function Dashboard(props) {
               admin && <Box>
  <Link to={`${url}`}><Button color="inherit">Dashboard</Button></Link>
             <br></br>
-            <Link to={`${url}/addcar`} className='dash text-dark'><Button color="inherit">Add Car</Button></Link>
+            <Link to={`${url}/addmenu`} className='dash text-dark'><Button color="inherit">Add Menu</Button></Link>
             <br></br>
             <Link to={`${url}/manageorder`} className='dash text-dark'><Button color="inherit">All Orders</Button></Link>   
             <br></br> 
@@ -169,8 +170,8 @@ function Dashboard(props) {
                     </Route>
                     
                    
-                    <Route path={`${path}/addcar`}>
-                        <AddCar></AddCar>
+                    <Route path={`${path}/addmenu`}>
+                       <AddMenu></AddMenu>
                     </Route>
                     <Route path={`${path}/manageorder`}>
                         <ManageOrder></ManageOrder>

@@ -5,7 +5,7 @@ import { Grid } from '@mui/material';
 import { NavLink, useLocation, useHistory, Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
-
+import './Login.css';
 const Login = () => {
     const [loginData, setLoginData] = useState({});
     const { user, loginUser, signInWithGoogle, isLoading, authError } = useAuth();
@@ -29,7 +29,7 @@ const Login = () => {
         signInWithGoogle(location, history)
     }
     return (
-        <Container>
+        <Container className='login'>
             <Grid container spacing={2}>
                 <Grid item sx={{ mt: 8 }} xs={12} md={6}>
                    <h1>Please Login First</h1>
@@ -61,10 +61,10 @@ const Login = () => {
                         {authError && <Alert severity="error">{authError}</Alert>}
                     </form>
                     <p>------------------------</p>
-                    <Link onClick={handleGoogleSignIn} variant="contained" className='text-center'><i class="fa-brands fa-google fs-1 text-warning bg-dark p-2 rounder rounded-circle" ></i></Link>
+                    <Link onClick={handleGoogleSignIn} variant="contained" className='text-center'><i class="fa-brands fa-google fs-1 text-google bg-dark p-2 rounder rounded-circle" ></i></Link>
                 </Grid>
                 <Grid item xs={12} md={6}>
-                   <img src='https://c0.wallpaperflare.com/preview/331/257/138/registration-login-keyboard-man.jpg' className='img-fluid w-100 mt-5'></img>
+                   {/* <img src='https://www.seekpng.com/png/small/359-3595778_covisint-pqrs-login-green-login.png' className='img-fluid w-50 mt-5'></img> */}
                 </Grid>
             </Grid>
         </Container>

@@ -1,0 +1,20 @@
+.des{
+    text-align: justify;
+}
+.bg-details{
+    background-color: #ace9b0;
+}
+.img-details{
+    padding-top: 150px;
+}
+.menu-details{
+    background-image: url("https://shtheme.com/demosd/orgafe/wp-content/themes/orgafe/img/bg/bg15.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+.menu-heading{
+    font-size: 80px;
+    padding-top: 100px;
+}

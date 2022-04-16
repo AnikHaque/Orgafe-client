@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import IndividualWatch from '../individualwatch/IndividualWatch';
+import IndividualProduct from '../individualproduct/IndividualProduct';
 
 
+import './Products.css';
 
-import './HomeWatches.css';
-
-const HomeWatches = () => {
+const Products = () => {
     const [food, setFood] = useState([])
     useEffect(()=>{
-fetch('https://aqueous-garden-43967.herokuapp.com/clock')
+fetch('http://localhost:5000/products')
 .then(res => res.json())
 .then(data => setFood(data))
     },[])
@@ -18,22 +16,23 @@ fetch('https://aqueous-garden-43967.herokuapp.com/clock')
 
     return (
         <div className='mt-5 mb-5'>
-            <h1 className="text-center mb-5 fw-bold menu-heading">Our Watch Collections</h1>
+            <img src='https://shtheme.info/demosd/orgafe/wp-content/uploads/2019/04/icon8.png' className='img-fluid d-flex mx-auto'></img>
+            <h1 className="text-center mb-5 fw-bold menu-heading">Our Products Collections</h1>
             <div className="service-container">
                 <div className="container">
             <div class="row row-cols-1 row-cols-lg-4 g-4">
                 {
-                    food.slice(0,4).map(foods => <IndividualWatch
+                    food.map(foods => <IndividualProduct
                         key={foods._id}
                         foods={foods}
-                    ></IndividualWatch>)
+                    ></IndividualProduct>)
                 }
-                <Link to="/watches" className='fw-bold text-dark fs-5'>Show All</Link>
                 </div>
                 </div>
             </div>
+           
   </div>
     )}     
 
 
-export default HomeWatches;
+export default Products;

@@ -32,17 +32,16 @@ const SingleReview = ({ review }) => {
             </Link> */}
   <div class="col">
     <div class="card h-100 review-card">
-      <img src={img} class="card-img-top w-50 review-image mx-auto" alt="..."></img>
+      {/* <img src={img} class="card-img-top w-50 review-image mx-auto" alt="..."></img> */}
       <div class="card-body">
-        <h6 class="card-title text-center fw-bold">{name}</h6>
+        <h4 class="card-title text-center fw-bold">{name}</h4>
         <h6 class="text-center"></h6>
         <p class="card-text text-center">"{description}"</p>
-      <ReactStars {...firstExample}  />
+       <ReactStars {...firstExample}  />
+    
       
       </div>
-      <div class="card-footer"> 
-      
-    </div>
+     
   </div>
 </div>
 

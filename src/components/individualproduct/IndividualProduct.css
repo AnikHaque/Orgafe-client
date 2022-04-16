@@ -1,0 +1,29 @@
+.card-bg{
+    box-shadow:3px 3px 10px gray;
+    border-radius:10px;
+    
+    
+}
+.image-watch{
+    /* border: 5px solid black; */
+   
+    background-color: #f1f6fa;
+    width: 100px;
+   
+    height: 100%;
+}
+.btn-details{
+    background-color: black;
+    margin-left: 40px;
+}
+.image-product{
+  
+    display: flex;
+    margin: auto;
+    margin-top: -30px;
+}
+.individual-products{
+    background-color: #f1f6fa;
+    padding: 20px;
+    border-radius: 3px;
+}

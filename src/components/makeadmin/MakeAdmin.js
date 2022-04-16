@@ -8,7 +8,7 @@ const MakeAdmin = () => {
 
   const handleAdminSubmit = e => {
       const user = {email};
-      fetch('https://aqueous-garden-43967.herokuapp.com/users/admin',{
+      fetch('http://localhost:5000/users/admin',{
           method:'PUT',
           headers:{
               'content-type':'application/json'

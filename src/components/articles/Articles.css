@@ -1,0 +1,19 @@
+.articles{
+    background-image: url("https://shtheme.com/demosd/orgafe/wp-content/uploads/2019/04/bg10.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 30px;
+}
+.read-more{
+    background-color: #f1f6fa;
+    border: 1px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.btn-service{
+    background-color: #f4f7fc;
+    border: 1px solid #f4f7fc;
+}

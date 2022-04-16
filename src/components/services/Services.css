@@ -1,0 +1,20 @@
+
+.services{
+    background-color: #f1f6fa;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.card{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border: 1px solid #f1f6fa ;
+}
+.btn-service{
+    background-color: #f1f6fa;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   text-decoration: none;
+  
+}

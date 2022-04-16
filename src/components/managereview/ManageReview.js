@@ -1,22 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import SingleReview from '../singleReview/SingleReview';
-// import './Explore.css'
 
 
+import './ManageReview.css';
 const ManageReview = () => {
     const [reviews, setReviews] = useState([])
     useEffect(() => {
-        fetch('https://aqueous-garden-43967.herokuapp.com/reviews')
+        fetch('http://localhost:5000/reviews')
             .then(res => res.json())
             .then(data => setReviews(data));
     }, [])
 
     return (
-        <div id="services">
-            <h1 className="text-center">Our Reviews</h1>
+        <div className='reviews'>
+            <img src='https://shtheme.com/demosd/orgafe/wp-content/uploads/2019/04/icon6.png' className='d-flex mx-auto pt-5'></img>
+            <h1 className="text-center fw-bold pb-5">Client's Say</h1>
+           
             <div className="service-container">
                 <div className="container">
-            <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="row row-cols-2 row-cols-md-2  row-cols-lg-3  g-4">
                 {
                     reviews.map(review => <SingleReview
                         key={review.id}

@@ -1,0 +1,12 @@
+.visit{
+    background-image: url("https://shtheme.info/demosd/orgafe/wp-content/uploads/2019/04/bg7.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+.visit-heading{
+    font-size: 60px;
+}
+.visit-short{
+    padding-top: 120px;
+}

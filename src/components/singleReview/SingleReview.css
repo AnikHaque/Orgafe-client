@@ -1,6 +1,9 @@
 .review-image{
     height: 150px;
+    background-color:#f1f6fa;
 }
 .review-card{
-    box-shadow: 3px 3px 10px gray;
+    box-shadow: 1px 1px 2px gray;
+    background-color: rgba(253, 254, 254,0.1);
+  
 }

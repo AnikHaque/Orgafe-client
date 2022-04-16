@@ -7,3 +7,17 @@
 .generation{
     color: darksalmon;
 }
+.banner{
+    background-image: url('https://shtheme.com/demosd/orgafe/wp-content/uploads/2019/04/slider2.jpg');
+    background-repeat: no-repeat;
+  
+    background-position: center;
+    background-size: cover;
+    height: 87vh;
+}
+.banner-title{
+    font-weight: bolder;
+  font-size: 60px;
+   padding-top: 150px;
+    padding-left: 50px;
+}

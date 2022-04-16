@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import IndividualCar from '../individualcar/IndividualCar';
+import IndividualProduct from '../individualproduct/IndividualProduct';
 
 
-import './Cars.css';
+import './HomeProduct.css';
 
-const Cars = () => {
+const HomeProduct= () => {
     const [food, setFood] = useState([])
     useEffect(()=>{
-fetch('https://aqueous-garden-43967.herokuapp.com/car')
+fetch('http://localhost:5000/products')
 .then(res => res.json())
 .then(data => setFood(data))
     },[])
@@ -16,15 +16,16 @@ fetch('https://aqueous-garden-43967.herokuapp.com/car')
 
     return (
         <div className='mt-5 mb-5'>
-            <h1 className="text-center mb-5 fw-bold menu-heading">Our Cars Collections</h1>
+             <img src='https://shtheme.info/demosd/orgafe/wp-content/uploads/2019/04/icon8.png' className='img-fluid image-product'></img>
+             <h1 className='text-center fw-bold mb-5'>OUR Products Collections</h1>
             <div className="service-container">
                 <div className="container">
             <div class="row row-cols-1 row-cols-lg-4 g-4">
                 {
-                    food.map(foods => <IndividualCar
+                    food.slice(0,4).map(foods => <IndividualProduct
                         key={foods._id}
                         foods={foods}
-                    ></IndividualCar>)
+                    ></IndividualProduct>)
                 }
                 </div>
                 </div>
@@ -34,4 +35,4 @@ fetch('https://aqueous-garden-43967.herokuapp.com/car')
     )}     
 
 
-export default Cars;
+export default HomeProduct;

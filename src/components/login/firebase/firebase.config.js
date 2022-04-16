@@ -1,9 +1,9 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyDSzwX3qrcgvtjBruIe2XpW6BoBPdNDc0I",
-  authDomain: "auto-car-4992f.firebaseapp.com",
-  projectId: "auto-car-4992f",
-  storageBucket: "auto-car-4992f.appspot.com",
-  messagingSenderId: "248948393032",
-  appId: "1:248948393032:web:2a98e1237df063df47c47d"
+  apiKey: "AIzaSyD4SHsPfm8GumY8VnYFNqGJ_qjcbpJ3JF8",
+  authDomain: "orgafe-ce22d.firebaseapp.com",
+  projectId: "orgafe-ce22d",
+  storageBucket: "orgafe-ce22d.appspot.com",
+  messagingSenderId: "31715389022",
+  appId: "1:31715389022:web:33b751a0d2774656cc4ecf"
 };
 export default firebaseConfig;

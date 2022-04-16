@@ -12,7 +12,9 @@
         border-radius: 5px;
     }
     .add-menu{
-        background-color: black;
-        padding-top: 20px;
+       background-image: url("https://shtheme.com/demosd/orgafe/wp-content/uploads/2019/04/bg8.jpg");
+       background-size: cover;
+       height: 100vh;
+        padding-top: 10px;
         padding-bottom: 40px;
     }

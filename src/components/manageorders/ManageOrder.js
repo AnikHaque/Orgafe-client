@@ -6,7 +6,7 @@ const ManageOrder = () => {
     const [foods, setFoods] = useState([])
     const {user} = useAuth();
     useEffect(() => {
-        fetch('https://aqueous-garden-43967.herokuapp.com/carbooking')
+        fetch('http://localhost:5000/carbooking')
             .then(res => res.json())
             .then(data => setFoods(data));
     }, [])
