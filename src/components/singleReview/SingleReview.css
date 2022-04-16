@@ -5,5 +5,12 @@
 .review-card{
     box-shadow: 1px 1px 2px gray;
     background-color: rgba(253, 254, 254,0.1);
+    height: 100px;
   
+}
+.single-review{
+    padding-left: 6rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+   
 }

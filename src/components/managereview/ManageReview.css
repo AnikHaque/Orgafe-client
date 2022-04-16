@@ -3,7 +3,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: auto;
     padding-top: 20px;
+    padding-bottom: 5rem;
    
 }

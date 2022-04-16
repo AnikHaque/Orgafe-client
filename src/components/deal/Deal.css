@@ -3,12 +3,12 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: auto;
     
     
 }
 .deal-heading{
-    font-size: 60px;
+    font-size: 4rem;
     margin-top: 100px;
 }
 .deal-time{

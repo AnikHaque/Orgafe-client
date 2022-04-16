@@ -23,26 +23,12 @@ const SingleReview = ({ review }) => {
     
     return (
         <div>
-            {/* <img src={img} alt="" />
-            <h3>{name}</h3>
-            <h5>Price: {price}</h5>
-            <p className="px-3">{description}</p>
-            <Link to={`/booking/${_id}`}>
-                <button className="btn btn-warning">View {name.toLowerCase()}</button>
-            </Link> */}
-  <div class="col">
-    <div class="card h-100 review-card">
-      {/* <img src={img} class="card-img-top w-50 review-image mx-auto" alt="..."></img> */}
-      <div class="card-body">
-        <h4 class="card-title text-center fw-bold">{name}</h4>
-        <h6 class="text-center"></h6>
-        <p class="card-text text-center">"{description}"</p>
-       <ReactStars {...firstExample}  />
+            
+  <div class="col bg-light single-review">
+  <h4 class="fw-bold">{name}</h4>
+        <p class="">"{description}"</p>
+        <ReactStars {...firstExample}  />
     
-      
-      </div>
-     
-  </div>
 </div>
 
 </div>
