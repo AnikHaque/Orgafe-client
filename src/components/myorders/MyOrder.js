@@ -5,7 +5,7 @@ const MyOrder = () => {
     const [foods, setFoods] = useState([])
     const {user} = useAuth();
     useEffect(() => {
-        fetch(`http://localhost:5000/menubooking?email=${user.email}`)
+        fetch(`https://cryptic-woodland-49347.herokuapp.com/menubooking?email=${user.email}`)
             .then(res => res.json())
             .then(data => setFoods(data));
     }, [])

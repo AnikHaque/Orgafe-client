@@ -18,7 +18,7 @@ const MenuDetails = () => {
    const { register, handleSubmit, reset } = useForm();
    const onSubmit = data =>{
        console.log(data);
-       axios.post("http://localhost:5000/menubooking",data)
+       axios.post("https://cryptic-woodland-49347.herokuapp.com/menubooking",data)
        .then(res=>{
            if(res.data.insertedId){
               alert("Added Successfully.")
@@ -31,7 +31,7 @@ const MenuDetails = () => {
      const {id} = useParams();
     const [food,setFood] = useState({})
      useEffect(()=>{
-         fetch(`http://localhost:5000/products/${id}`)
+         fetch(`https://cryptic-woodland-49347.herokuapp.com/products/${id}`)
        .then(res=>res.json())
         .then(data=>setFood(data))
 

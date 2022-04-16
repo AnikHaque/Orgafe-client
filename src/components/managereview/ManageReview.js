@@ -6,7 +6,7 @@ import './ManageReview.css';
 const ManageReview = () => {
     const [reviews, setReviews] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://cryptic-woodland-49347.herokuapp.com/reviews')
             .then(res => res.json())
             .then(data => setReviews(data));
     }, [])
